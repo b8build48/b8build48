@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Domain Selection</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+}
+
+```    #domain-selection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #free-domain {
+        margin-bottom: 20px;
+    }
+    
+    #premium-domains {
+        margin-bottom: 20px;
+    }
+    
+    #template-selection {
+        margin-bottom: 20px;
+    }
+        
+</style>
+
+</head>
+<body>
+<div id="domain-selection">
+<h1>Domain Selection</h1>
+<div id="free-domain">
+<h2>Free Domain</h2>
+<p>www.yourwebsite.b8.com (2 free templates)</p>
+</div>
+<div id="premium-domains">
+<h2>Premium Domains</h2>
+<ul>
+<li>yourwebsite.com ($20/year)</li>
+<li>yourwebsite.net ($15/year)</li>
+<li>yourwebsite.io ($25/year)</li>
+<!-- ... -->
+<li>yourwebsite.enterprises ($70/year)</li>
+</ul>
+</div>
+<div id="template-selection">
+<h2>Template Selection</h2>
+<ul>
+<li>Template 1</li>
+<li>Template 2</li>
+<!-- ... -->
+<li>Template 40</li>
+</ul>
+</div>
+<button id="select-domain-button">Select Domain and Template</button>
+</div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domain Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 2
+    20px;
+        }
+        
+        input, select {
+            width: 100%;
+            height: 40px;
+            margin-bottom: 20px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        
+        button {
+            width: 100%;
+            height: 40px;
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    <h1>Domain Registration</h1>
+    <form>
+        <label for="domain-name">Domain Name:</label>
+        <input type="text" id="domain-name" name="domain-name">
+        
+        <label for="domain-extension">Domain Extension:</label>
+        <select id="domain-extension" name="domain-extension">
+            <option value=".com">.com</option>
+            <option value=".net">.net</option>
+            <option value=".io">.io</option>
+            <option value=".org">.org</option>
+        </select>
+        
+        <label for="domain-duration">Registration Duration:</label>
+        <select id="domain-duration" name="domain-duration">
+            <option value="1">1 year</option>
+            <option value="2">2 years</option>
+            <option value="3">3 years</option>
+        </select>
+        
+        <button class="register-domain-btn">Register Domain</button>
+    </form>
+    
+    <section id="domain">
+            <h2>Get a Free Domain</h2>
+            <form>
+                <label for="domain-name">Domain Name:</label>
+                <input type="text" id="domain-name" name="domain-name"><br><br>
+                <button class="register-domain-btn">Register Domain</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    
+    <script>
+        const registerDomainBtn = document.querySelector('.register-domain-btn');
+        registerDomainBtn.addEventListener('click', () => {
+            const domainName = document.getElementById('domain-name').value;
+            const domainExtension = document.getElementById('domain-extension').value;
+            const domainDuration = document.getElementById('domain-duration').value;
+
+            // Calculate domain registration cost
+            let domainCost;
+            switch (domainExtension) {
+                case '.com':
+                    domainCost = 12 * parseInt(domainDuration);
+                    break;
+                case '.net':
+                    domainCost = 15 * parseInt(domainDuration);
+                    break;
+                case '.io':
+                    domainCost = 20 * parseInt(domainDuration);
+                    break;
+                case '.org':
+                    domainCost = 18 * parseInt(domainDuration);
+                    break;
+            }
+
+            // Display domain registration cost
+            alert(`Domain registration cost: $${domainCost}`);
+
+            // Register domain using GoDaddy API
+            const apiKey = 'YOUR_API_KEY';
+            const apiSecret = 'YOUR_API_SECRET';
+            const endpointUrl = 'https://api.godaddy.com/v1/domains';
+
+            const headers = {
+                'Authorization': `sso-key ${apiKey}:${apiSecret}`,
+                'Content-Type': 'application/json'
+            };
+
+            const data = {
+                'domain': `${domainName}${domainExtension}`,
+                'period': parseInt(domainDuration),
+                'privacy': false,
+                'autoRenew': false
+            };
+
+            fetch(endpointUrl, {
+                method: 'POST',
+                headers,
+                body: JSON.stringify(data)
+            })
+            .then(response => response.json())
+            .then(data => console.log(data))
+            .catch(error => console.error(error));
+        });
+    </script>
+</body>
+</html>
+

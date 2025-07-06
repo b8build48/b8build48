@@ -1,0 +1,378 @@
+
+<button class="get-started-btn">Register a Domain</button>
+
+<button class="explore-btn">Explore Our Templates</button>
+
+<button class="ai-btn">AI Assistant</button>
+
+<script>
+const getStartedBtn = document.querySelector('.get-started-btn');
+getStartedBtn.addEventListener('click', () => {
+window.location.href = 'register.html';
+});
+
+const exploreBtn = document.querySelector('.explore-btn');
+exploreBtn.addEventListener('click', () => {
+window.location.href = 'templates.html';
+});
+
+const aiBtn = document.querySelector('.ai-btn');
+aiBtn.addEventListener('click', () => {
+window.location.href = 'ai-assistant.html';
+});
+</script>
+
+<style>
+body {
+font-family: Arial, sans-serif;
+background-color: #f7f7f7;
+}
+
+.container {
+max-width: 800px;
+margin: 40px auto;
+text-align: center;
+}
+
+.get-started-btn, .explore-btn, .ai-btn {
+width: 200px;
+height: 40px;
+margin: 20px;
+padding: 10px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.get-started-btn {
+background-color: #4CAF50;
+color: #fff;
+}
+
+.explore-btn {
+background-color: #008CBA;
+color: #fff;
+}
+
+.ai-btn {
+background-color: #FF9800;
+color: #fff;
+}
+</style>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Builder</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#templates">Templates</a></li>
+                <li><a href="#builder">Builder</a></li>
+                <li><a href="domain.html">Domain</a></li>
+         <li><a href="#templates">Templates</a></li>
+              </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="templates">
+            <h2>Choose a Template</h2>
+            <div class="template-grid">
+                <!-- Template thumbnails will be generated here -->
+            </div>
+            <button class="load-more-btn">Load More</button>
+        </section>
+        <section id="builder">
+            <h2>Website Builder</h2>
+            <div class="builder-container">
+                <!-- Website builder interface will be rendered here -->
+            </div>
+        </section>
+        <section id="settings">
+            <h2>Settings</h2>
+            <form>
+                <label for="website-name">Website Name:</label>
+                <input type="text" id="website-name" name="website-name"><br><br>
+                <label for="website-tagline">Website Tagline:</label>
+                <input type="text" id="website-tagline" name="website-tagline"><br><br>
+                <button class="save-btn">Save Changes</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+section {
+    background-color: #fff;
+    padding: 1em;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
+.template-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.template-thumbnail {
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.load-more-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.load-more-btn:hover {
+    background-color: #555;
+}
+
+.builder-container {
+    width: 100%;
+    height: 500px;
+    border: 1px solid #ddd;
+    padding: 1em;
+    overflow-y: auto;
+}
+
+.save-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.save-btn:hover {
+    background-color: #555;
+}
+</style>
+<script>
+// Template data
+const templates = [
+    { id: 1, name: 'Template 1', thumbnail: 'template1.jpg' },
+    { id: 2, name: 'Template 2', thumbnail: 'template2.jpg' },
+    // Add more templates here
+];
+
+// Render template thumbnails
+const templateGrid = document.querySelector('.template-grid');
+templates.forEach((template) => {
+    const templateThumbnail = document.createElement('div');
+    templateThumbnail.classList.add('template-thumbnail');
+    templateThumbnail.style.backgroundImage = `url(${
+    </script>
+
+
+    
+    
+    
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Builder</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+        
+        <section id="templates">
+            <h2>Choose a Template</h2>
+            <button class="create-template-btn">Create Template</button>
+            <div class="template-grid">
+                <!-- Template thumbnails will be generated here -->
+            </div>
+        </section>
+        <section id="builder">
+            <h2>Website Builder</h2>
+            <input></input>
+                
+            </div>
+            <button class="ai-assistant-btn">AI Assistant</button>
+        </section>
+        
+</body>
+</html>
+
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+section {
+    background-color: #fff;
+    padding: 1em;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
+.template-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.create-template-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.create-template-btn:hover {
+    background-color: #555;
+}
+
+.input {
+    width: 100%;
+    height: 500px;
+    border: 1px solid #ddd;
+    padding: 1em;
+    overflow-y: auto;
+}
+
+.ai-assistant-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.ai-assistant-btn:hover {
+    background-color: #555;
+}
+
+.
+    </style>
+
+
+
+
+    <script>// Create template button click event
+const createTemplateBtn = document.querySelector('.create-template-btn');
+createTemplateBtn.addEventListener('click', () => {
+    // Redirect to template creation page
+    window.location.href = 'create-template.html';
+});
+
+// AI assistant button click event
+const aiAssistantBtn = document.querySelector('.ai-assistant-btn');
+aiAssistantBtn.addEventListener('click', () =>
+    </script>
+   
+
+
+
+    
+
+    
