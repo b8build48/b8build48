@@ -192,7 +192,8 @@ margin-top: 10px;
   height:1848px; /* Set height */
   margin: 20px auto; /* Add margin */
   display: block; /* Display as block element */
-}
+    font-size: 8px; /* Your desired small size */
+  }
 
 .home-box p {
 font-size: 14px;

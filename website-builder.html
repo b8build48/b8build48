@@ -2,8 +2,24 @@
 <!DOCTYPE html>
 <html>
 <head>
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"></head>
     <title>Website Builder</title>
-    <style>
+    
+</head>
+<body>
+    <div id="container">
+        <h1>What is the purpose of your website?</h1>
+        <select id="website-purpose-select">
+            <option value="blog">Blog</option>
+            <option value="e-commerce">E-commerce</option>
+            <option value="portfolio">Portfolio</option>
+        </select>
+        <button id="next-button" onclick="window.location.href='profession.html'">Next</button>
+    </div>
+</body>
+</html>
+<style>
         body {
             background-color: #f0f0f0; /* Light gray background color */
             font-family: Arial, sans-serif;
@@ -38,17 +54,3 @@
             background-color: #3e8e41; /* Darker green background color on hover */
         }
     </style>
-</head>
-<body>
-    <div id="container">
-        <h1>What is the purpose of your website?</h1>
-        <select id="website-purpose-select">
-            <option value="blog">Blog</option>
-            <option value="e-commerce">E-commerce</option>
-            <option value="portfolio">Portfolio</option>
-        </select>
-        <button id="next-button" onclick="window.location.href='profession.html'">Next</button>
-    </div>
-</body>
-</html>
-``
