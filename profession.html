@@ -10,14 +10,14 @@
 <body>
     
         <h1>What is your profession?</h1>
-        <p>Please write  your profession in the list </p>
-        <input id="write your profession" type="write" placeholder="pls write your profession...">
+        <p>Please write  your profession in the input </p>
+        <input id="b8j4" name="search" placeholder="pls write your profession...">
         <ul id="profession-list">
             
            
             
             <body>
- <button onclick="window.location.href='ai assisted.html'">Next</button>
+ <button id="next-button" disabled>Next</button>
             </body>
             <style>
         body {
@@ -34,7 +34,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
         }
         
-        #profession-search {
+        #b8j4 {
             width: 100%;
             padding: 10px;
             font-size: 16px;
@@ -69,5 +69,25 @@
             background-color: #3e8e41; /* Darker green background color on hover */
         }
     </style>
+            <script>
+            const input =document.getElementById('b8j4')
+            const submitBtn =document.getElementById('next-button');
+            input.addEventListener('input' ()=>{
+                submitBtn.disabled = inputField2.value.trim() === '';
+});
+
+// Initialize button state
+submitBtn.disabled = inputField2.value.trim() === '';
+
+submitBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  window.location.href = 'ai assisted.html';
+});
+            </script>
 
 
+
+            
+            
+            
+            

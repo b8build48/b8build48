@@ -4,20 +4,70 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>blessing website build</title>
 </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Half-Screen Side Dropdown</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Make the offcanvas take half the screen width */
+    .offcanvas-half {
+      width: 50vw;
+      background-color: white;
+    }
+  </style>
+</head>
 <body>
-<!-- Header Section -->
-  <main>
-  <header>
-<nav>
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="pricing.html">Pricing</button></li>
-<li><a href="https://stackoverflow.blog">Blog</button></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">MySite</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarMain">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+        <li class="nav-item">
+          <!-- Trigger Offcanvas -->
+          <a class="nav-link" data-bs-toggle="offcanvas" href="#sideDropdown" role="button" aria-controls="sideDropdown">
+            More
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </nav>
-     </main>
-</header>
+
+<!-- Side Dropdown (Offcanvas) -->
+<div class="offcanvas offcanvas-end offcanvas-half" tabindex="-1" id="sideDropdown" aria-labelledby="sideDropdownLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="sideDropdownLabel">More Options</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="list-unstyled">
+      <li><a href="about-us.html" class="d-block py-2 text-dark text-decoration-none">About Us</a></li>
+      <li><a href="our-service.html" class="d-block py-2 text-dark text-decoration-none">Services</a></li>
+      <li><a href="contact-us.html" class="d-block py-2 text-dark text-decoration-none">Contact</a></li>
+      <li><a href="login.html" class="d-block py-2 text-dark text-decoration-none">Login</a></li>
+      <li><a href="pricing.html" class="d-block py-2 text-dark text-decoration-none">pricing</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
 
 
     
@@ -26,14 +76,20 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <input type="text" id="search-input" placeholder="Search...">
-  <button id="search-button">Search</button>
-  <div id="search-results"></div>
-
+  
   <script src="script.js"></script>
 
 
 
+  <section class="hero">
+    
+  </section>
+
+<div class="box">
+  <h1 class="b8h18448">let's get started</h1>
+  <p class="p84">build your website now </p>
+  <button class="button84"><a href='website-builder.html'">Website Builder</button>
+</div>
 
 
 
@@ -42,17 +98,14 @@
 
 
 
-
-
-
-
+  
 <section id="getting-started">
   <div class="home-grid">
-<div class="home-box">
-<img class="b8box" src="20250709_192044 (1) (1).jpg" alt="WordPress for Beginners">
-<h3>Getting Started</h3>
+    <div class="home-box">
+<img src="/storage/emulated/0/blessing website builder 48 file/20250709_192044 (1) (1).jpg" alt="WordPress for Beginners">
+      <h3>Getting Started</h3>
 <p>start building your own website.</p>
-    <button><a href='website-builder.html'">Website Builder</button>
+      <button><a href='website-builder.html'">Website Builder</button>
 </div>
       </section>
       
@@ -67,8 +120,10 @@
       
 </div>
 </section>
-<section id="customize-your-website">
-     <div class="home-box">
+
+        <section id="customize-your-website">
+          <div class="home-grid">
+          <div class="home-box">
 <video width="100%" height="150" controls>
 <source src="Https://www.youtube.com/results?search_query=website+customization+tutorials" type="video/mp4">
  
@@ -78,17 +133,23 @@ Your browser does not support the video tag.
 <p>Choose from thousands of themes and customize your website to match your brand.</p>
 <a href="wordpress-home-video-1.mp4" download>Download Video</a>
 </div>
+</div>
 </section>
-<section id="building-your-online-presence">
+
+        <section id="building-your-online-presence">
+          <div class="home-grid">
      <div class="home-box">
-<img src="wordpress-home-2.jpg" alt="WordPress for Business">
+<img class="b8img" src="20250709_192044 (1) (1).jpg" alt="WordPress for Business">
 <h3>Building Your Online Presence</h3>
 <p>Create a professional website and establish your online presence.</p>
      <button onclick="window.location.href='website-builder.html'">Website Builder</button>
 </div>
+          </div>
 </section>
-<section id="Creating-Content-with-WordPress"
-<div class="home-box">
+
+        <section id="Creating-Content-with-WordPress">
+          <div class="home-grid">
+          <div class="home-box">
 <video width="100%" height="150%" controls>
 <source src="Https://www.youtube.com/results? search_query=launch+website+using+github" type="video/mp4">
 
@@ -97,21 +158,27 @@ Your browser does not support the video tag.
 <p>Learn how to create and manage content using github.</p>
 <a href="wordpress-home-video-2.mp4" download>Download Video</a>
 </div>
+          </div>
 </section>
-<section id="b8build48-community">
-<div class="home-box">
+
+        <section id="b8build48-community">
+          <div class="home-grid">
+          <div class="home-box">
 <img src="wordpress-home-3.jpg" alt="WordPress Community">
 <h3>Join the b8build48 Community</h3>
 <p>Connect with millions of b8build48 users and developers around the world.</p>
 <button class="b8app"onclick="window.location.href='https://b8build48.github.io/b8app/b8build48/'">the b8build48 coding comunity</button>
 </div>
+          </div>
 </section>
-<section id="advanced-wordpress-features"
-<div class="home-box">
+
+        <section id="advanced-wordpress-features">
+          <div class="home-grid">
+          <div class="home-box">
 <video width="100%" height="150" controls>
 <source src="Https://www.youtube.com/results?search_query=advanced+github+skills" type="video/mp4">
 
-Your browser does not support the video tag.
+
 </video>
 <h3>Advanced github features</h3>
 <p>Learn about the advanced features on.</p>
@@ -119,30 +186,6 @@ Your browser does not support the video tag.
 </div>
 </div>
 </section>
-    
-    
-    
-    
-    
-
-     
-     
-    
-
-
-
-    
-    
-
-
-
-
-    
-    
-
-    
-    
-    
     <footer>
     <center>
     <p>&copy; 2025 b8build48</p>
@@ -150,19 +193,4 @@ Your browser does not support the video tag.
 </footer>
 </body>
 </html>
-
-
-
-    <style>
-
-</style>
-
-
-    
-    
-
-
-
-
-    
     

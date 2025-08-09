@@ -1,3 +1,50 @@
+         .hero {
+    background-color: bisque;
+    height:480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+             
+  }
+body{
+    background-image: url('Screenshot_2025-07-26-14-08-29-76_6012fa4d4ddec268fc5c7112cbb265e7 (1).jpg');
+    background-size:842px 842px;
+    
+    
+    
+}
+.box{
+    width:284px;
+    height:365.48px;
+    background-image:url('IMG-20250723-WA0011 (1).jpg');
+    background-size:cover;
+    color:blue;
+    outline:1px solid black;
+    margin-bottom:284px;
+    margin-top:184px;
+    margin-left:auto;
+    margin-right:auto;
+    border-top-left-radius:48px;
+    border-top-right-radius:48px;
+    border-bottom-left-radius:48px;
+    border-bottom-right-radius:48px;
+    text-align:center;
+}
+.b8h18448{
+    position:relative;
+    top:48px;
+    font-size:38px;
+}
+.button84{
+    position:relative;
+    top:184px;
+    
+}
+.p84{
+    position:relative;
+    top:184px;
+}
 .contact-section {
   max-width: 800px;
   margin: 40px auto;
@@ -104,57 +151,8 @@ a{
   }
 }
 
-#search-input {
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-}
 
-#search-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #4CAF50;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
-
-#search-results {
-  padding: 20px;
-}
-
-#search-results div {
-  padding: 10px;
-  border-bottom: 1px solid #ccc;
-}
- header {
-background-color: #000000;
-color: #fff;
-padding: 1em;
-text-align: center;
-}
-
-header nav ul {
-list-style: none;
-margin: 0;
-padding: 10;
-display: flex;
-justify-content: space-between;
-}
-
-header nav ul li {
-margin-right: 20px;
-}
-
-header button {
-background-color: transparent;
-color: #fff;
-border: none;
-padding: 10px 20px;
-font-size: 16px;
-cursor: pointer;
-}
-     
+ 
 .home-grid {
 display: grid;
 grid-template-columns: repeat(1, 1fr);
@@ -170,10 +168,12 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .home-box img {
-width: 100%;
-height: 280px;
+width:148px;
+height:184px;
+    
 object-fit: cover;
-border-radius: 10px 10px 0 0;
+border-radius:10%;
+    float:right;
 }
 
 .home-box video {
@@ -217,22 +217,6 @@ padding: 0;
 }
 
 
-
-#hero {
-background-image: url('hero.jpg');
-background-size: cover;
-background-position: center;
-height: 100vh;
-display: flex;
-justify-content: center;
-align-items: center;
-color: #fff;
-}
-
-#hero h1 {
-font-size: 48px;
-}
-
 #website-builder {
 text-align: center;
 margin-bottom: 20px;
@@ -258,88 +242,19 @@ cursor: pointer;
 border-radius:10px;
 }
 
-.b8box{
-  width:50px;
-  height:50px;
-  border-radius:10px;
-}
-     
-     
-     header {
-background-color: #000000;
-color: #fff;
-padding: 1em;
-text-align: center;
-}
-
-header nav ul {
-list-style: none;
-margin: 0;
-padding: 10;
-display: flex;
-justify-content: space-between;
-}
-
-header nav ul li {
-margin-right: 20px;
-}
-
-header button {
-background-color: transparent;
-color: #fff;
-border: none;
-padding: 10px 20px;
-font-size: 16px;
-cursor: pointer;
-}
-     
-.home-grid {
-display: grid;
-grid-template-columns: repeat(1, 1fr);
-grid-gap: 10px;
-padding: 10px;
-}
-
-.home-box {
-background-color: #f7f7f7;
-padding: 48px;
-  border: 1px solid #ddd;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.home-box img {
-width: 100%;
-height: 280px;
-object-fit: cover;
-border-radius: 10px 10px 0 0;
-}
-
-.home-box video {
-width: 100%;
-height: 280px;
-border-radius: 10px 10px 0 0;
-}
-
-.home-box h3 {
-font-size: 18px;
-margin-top: 10px;
-}
-
-.home-box p {
-font-size: 14px;
-color: #666;
-}
-
-.home-box a {
-font-size: 14px;
-color: #337ab7;
-text-decoration: none;
-}
-
-.home-box a:hover {
-color: #23527c;
-}
+.b8img{
+  width:2px;
+  height:2px;
+  border-radius:50%;
     
+}
+     
+
+
+     
+
+
+
     body {
 font-family: Arial, sans-serif;
 margin: 0;
@@ -348,34 +263,6 @@ padding: 0;
 
 
 
-#hero {
-background-image: url('hero.jpg');
-background-size: cover;
-background-position: center;
-height: 100vh;
-display: flex;
-justify-content: center;
-align-items: center;
-color: #fff;
-}
-
-#hero h1 {
-font-size: 48px;
-}
-
-#website-builder {
-text-align: center;
-margin-bottom: 20px;
-}
-
-button {
-background-color: #4CAF50;
-color: #fff;
-border: none;
-padding: 10px 20px;
-font-size: 16px;
-cursor: pointer;
-}
 
 
 footer {
@@ -387,4 +274,9 @@ padding-top:8em;
 clear: both;
 }
 
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(48px); }
+      to { opacity: 1; transform: translateY(48); }
+    }
 
